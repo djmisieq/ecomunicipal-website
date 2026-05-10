@@ -239,6 +239,59 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // ─── Live Eco Dashboard ───
+  const liveCo2 = document.getElementById('live-co2');
+  const liveWaste = document.getElementById('live-waste');
+  
+  if (liveCo2 && liveWaste) {
+    let co2Val = 1240;
+    let wasteVal = 847293;
+    
+    setInterval(() => {
+      // Simulate real-time data increase
+      co2Val += Math.random() > 0.5 ? 1 : 0;
+      wasteVal += Math.floor(Math.random() * 3);
+      
+      liveCo2.textContent = co2Val.toLocaleString('pl-PL');
+      liveWaste.textContent = wasteVal.toLocaleString('pl-PL');
+      
+      // Add subtle glow effect on update
+      liveWaste.style.textShadow = '0 0 10px rgba(34,197,94,0.5)';
+      setTimeout(() => {
+        liveWaste.style.textShadow = 'none';
+      }, 500);
+    }, 3500);
+  }
+
+  // ─── Scrollytelling Factory ───
+  const factorySection = document.getElementById('technologia');
+  const factorySteps = document.querySelectorAll('.factory-step');
+  const factoryLayers = document.querySelectorAll('.factory-media__layer');
+
+  if (factorySection && factorySteps.length > 0) {
+    const handleFactoryScroll = () => {
+      const windowHeight = window.innerHeight;
+      
+      factorySteps.forEach((step, index) => {
+        const rect = step.getBoundingClientRect();
+        if (rect.top < windowHeight * 0.6 && rect.bottom > windowHeight * 0.4) {
+          if (!step.classList.contains('is-active')) {
+            factorySteps.forEach(s => s.classList.remove('is-active'));
+            step.classList.add('is-active');
+            
+            factoryLayers.forEach(layer => layer.classList.remove('active'));
+            if (factoryLayers[index]) {
+              factoryLayers[index].classList.add('active');
+            }
+          }
+        }
+      });
+    };
+    
+    window.addEventListener('scroll', handleFactoryScroll, { passive: true });
+    handleFactoryScroll();
+  }
+
   // ─── Particle Canvas (Hero) ───
   const canvas = document.getElementById('hero-particles');
   if (canvas) {

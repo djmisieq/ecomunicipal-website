@@ -129,6 +129,36 @@
     </div>
   </section>
 
+  <!-- ECO DASHBOARD -->
+  <section class="section eco-dashboard" id="ekologia">
+    <div class="container">
+      <div class="eco-dashboard__inner animate">
+        <div class="eco-dashboard__header">
+          <div class="section__label section__label--green">Wpływ środowiskowy</div>
+          <h2 class="section__title">Zrównoważony <span>rozwój</span> na żywo</h2>
+          <p class="section__description">Dzięki innowacyjnym pojazdom i optymalizacji tras, wspólnie redukujemy emisję CO₂ i oszczędzamy zasoby.</p>
+        </div>
+        <div class="eco-dashboard__stats">
+          <div class="eco-stat">
+            <div class="eco-stat__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+            <div class="eco-stat__value" id="live-co2">1 240</div>
+            <div class="eco-stat__label">Ton CO₂ zaoszczędzonych w 2026</div>
+          </div>
+          <div class="eco-stat">
+            <div class="eco-stat__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+            <div class="eco-stat__value" id="live-waste">847 293</div>
+            <div class="eco-stat__label">Ton zebranych odpadów</div>
+          </div>
+          <div class="eco-stat">
+            <div class="eco-stat__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+            <div class="eco-stat__value" id="live-fleet">2 147</div>
+            <div class="eco-stat__label">Aktywnych pojazdów we flocie</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ABOUT -->
   <section class="section about" id="o-nas">
     <div class="container">
@@ -172,47 +202,56 @@
     </div>
   </section>
 
-  <!-- TECHNOLOGY -->
-  <section class="section technology" id="technologia">
-    <div class="container">
-      <div class="section__header animate">
-        <div class="section__label">Proces produkcji</div>
-        <h2 class="section__title">Zaawansowana <span>technologia</span></h2>
-        <p class="section__description">Od projektu 3D po gotowy pojazd – kontrolujemy każdy etap.</p>
+  <!-- FACTORY SCROLLYTELLING -->
+  <section class="factory-scrollytelling" id="technologia">
+    <div class="factory-sticky">
+      <div class="factory-media" id="factory-media">
+        <div class="factory-media__layer active" style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1920&q=80')"></div>
+        <div class="factory-media__layer" style="background-image: url('https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=format&fit=crop&w=1920&q=80')"></div>
+        <div class="factory-media__layer" style="background-image: url('https://images.unsplash.com/photo-1565439390119-94dbf0687f8b?auto=format&fit=crop&w=1920&q=80')"></div>
+        <div class="factory-media__layer" style="background-image: url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1920&q=80')"></div>
       </div>
-      <div class="technology__steps animate--stagger">
-        <div class="tech-step"><span class="tech-step__number">01</span>
-          <div class="tech-step__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
-          <h4 class="tech-step__title">Projektowanie</h4><p class="tech-step__text">CAD/CAM 3D, symulacje MES</p>
-        </div>
-        <div class="tech-step"><span class="tech-step__number">02</span>
-          <div class="tech-step__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12h.01"/><path d="M17 12h.01"/><path d="M7 12h.01"/></svg></div>
-          <h4 class="tech-step__title">Prototypowanie</h4><p class="tech-step__text">Szybkie prototypy i testy</p>
-        </div>
-        <div class="tech-step"><span class="tech-step__number">03</span>
-          <div class="tech-step__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
-          <h4 class="tech-step__title">Produkcja</h4><p class="tech-step__text">Spawanie robotyczne, CNC</p>
-        </div>
-        <div class="tech-step"><span class="tech-step__number">04</span>
-          <div class="tech-step__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg></div>
-          <h4 class="tech-step__title">Kontrola</h4><p class="tech-step__text">Testy jakości i odbiór</p>
-        </div>
+      <div class="factory-overlay"></div>
+    </div>
+    
+    <div class="container factory-content">
+      <div class="factory-header animate">
+        <div class="section__label">Fabryka Przyszłości</div>
+        <h2 class="section__title">Jak powstaje <span>EcoMunicipal</span></h2>
       </div>
-      <div class="technology__features animate--stagger">
-        <div class="feature-card">
-          <div class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m-7-1 4.2-5.8M19 5l-4.2 5.8M1 12h6m6 0h6M5 19l5.8-4.2M19 5l-5.8 4.2"/></svg></div>
-          <h4 class="feature-card__title">Spawanie robotyczne</h4>
-          <p class="feature-card__text">Precyzyjne spoiny wykonywane przez roboty KUKA z dokładnością 0.1mm.</p>
+
+      <div class="factory-steps">
+        <div class="factory-step" data-step="0">
+          <h3>01. Projektowanie CAD/CAM</h3>
+          <p>Każdy pojazd jest precyzyjnie projektowany w środowisku 3D. Przeprowadzamy zaawansowane symulacje wytrzymałościowe MES (Metoda Elementów Skończonych), aby zagwarantować maksymalną ładowność przy optymalnej masie własnej.</p>
+          <ul class="factory-step__list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Tolerancja błędów: 0.01 mm</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Cyfrowy bliźniak przed produkcją</li>
+          </ul>
         </div>
-        <div class="feature-card">
-          <div class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
-          <h4 class="feature-card__title">Stal Hardox®</h4>
-          <p class="feature-card__text">Stosujemy stal odporną na ścieranie, gwarantującą trwałość zabudowy.</p>
+        <div class="factory-step" data-step="1">
+          <h3>02. Cięcie i Spawanie Robotyczne</h3>
+          <p>Stosujemy najwyższej jakości stal trudnościeralną Hardox®. Nowoczesne roboty KUKA wykonują precyzyjne spoiny, zapewniając wytrzymałość na dziesiątki lat ciężkiej pracy komunalnej.</p>
+          <ul class="factory-step__list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> 100% kontrola ultradźwiękowa spoin</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Wydajność: 5 zabudów dziennie</li>
+          </ul>
         </div>
-        <div class="feature-card">
-          <div class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg></div>
-          <h4 class="feature-card__title">Napędy elektryczne</h4>
-          <p class="feature-card__text">E-kompaktory i e-zamiatarki dla zeroemisyjnej gospodarki komunalnej.</p>
+        <div class="factory-step" data-step="2">
+          <h3>03. Lakiernia i Zabezpieczenie</h3>
+          <p>48-godzinny cykl lakierniczy obejmuje piaskowanie, fosforanowanie oraz wielowarstwowe lakierowanie z wykorzystaniem farb o podwyższonej odporności na warunki atmosferyczne i chemię drogową.</p>
+          <ul class="factory-step__list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Gwarancja na powłokę: 10 lat</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Zero emisji LZO do atmosfery</li>
+          </ul>
+        </div>
+        <div class="factory-step" data-step="3">
+          <h3>04. Montaż Końcowy i Testy</h3>
+          <p>Zabudowa jest integrowana z podwoziem. Instalujemy systemy hydrauliczne, elektryczne i smart-sterowanie. Gotowy pojazd przechodzi rygorystyczny, 50-punktowy test obciążeniowy.</p>
+          <ul class="factory-step__list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Integracja z MAN, DAF, Scania</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Gotowe do natychmiastowej pracy</li>
+          </ul>
         </div>
       </div>
     </div>
