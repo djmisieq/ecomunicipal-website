@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoMunicipal – Innowacyjne Zabudowy Komunalne</title>
+  <meta name="description" content="Producent nowoczesnych zabudów pojazdów komunalnych. Śmieciarki, zamiatarki, pojazdy zimowe i specjalne.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/variables.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/sections.css">
+  <link rel="stylesheet" href="styles/sections-part2.css">
+  <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <div class="header__logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <span class="header__logo-text">Eco<span>Municipal</span></span>
+      </a>
+      <nav class="header__nav" id="main-nav">
+        <a href="#produkty" class="header__nav-link">Produkty</a>
+        <a href="#o-nas" class="header__nav-link">O nas</a>
+        <a href="#technologia" class="header__nav-link">Technologia</a>
+        <a href="#realizacje" class="header__nav-link">Realizacje</a>
+        <a href="#kontakt" class="header__nav-link">Kontakt</a>
+        <a href="#kontakt" class="btn btn--primary btn--sm header__cta">Zapytaj o ofertę</a>
+      </nav>
+      <button class="header__menu-toggle" id="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <canvas class="hero__canvas" id="hero-particles"></canvas>
+    <div class="hero__bg">
+      <img src="assets/images/hero-bg.png" alt="Pojazd komunalny" loading="eager">
+      <div class="hero__bg-overlay"></div>
+    </div>
+    <div class="hero__bg-glow"></div>
+    <div class="container hero__content">
+      <div class="hero__badge"><span class="badge badge--green">🌿 Lider branży komunalnej</span></div>
+      <h1 class="hero__title">Innowacyjne zabudowy <span>komunalne</span> nowej generacji</h1>
+      <p class="hero__subtitle">Projektujemy i produkujemy zaawansowane zabudowy pojazdów komunalnych, łącząc najwyższą jakość z troską o środowisko naturalne.</p>
+      <div class="hero__actions">
+        <a href="#produkty" class="btn btn--primary btn--lg">Poznaj produkty <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        <a href="#kontakt" class="btn btn--outline btn--lg">Zapytaj o ofertę</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat-card"><div class="stat-card__number" data-counter="25" data-suffix="+">0</div><div class="stat-card__label">Lat doświadczenia</div></div>
+        <div class="stat-card"><div class="stat-card__number" data-counter="2000" data-suffix="+">0</div><div class="stat-card__label">Wyprodukowanych pojazdów</div></div>
+        <div class="stat-card"><div class="stat-card__number" data-counter="15" data-suffix="+">0</div><div class="stat-card__label">Krajów eksportu</div></div>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator"><span>Przewiń</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="section products" id="produkty">
+    <div class="container">
+      <div class="section__header animate">
+        <div class="section__label">Oferta produktowa</div>
+        <h2 class="section__title">Kompleksowe rozwiązania <span>komunalne</span></h2>
+        <p class="section__description">Szeroka gama zabudów dla każdego zastosowania w gospodarce komunalnej.</p>
+      </div>
+      <div class="tabs animate">
+        <button class="tab-btn active" data-filter="all">Wszystkie</button>
+        <button class="tab-btn" data-filter="refuse">Śmieciarki</button>
+        <button class="tab-btn" data-filter="sweeper">Zamiatarki</button>
+        <button class="tab-btn" data-filter="winter">Zimowe</button>
+        <button class="tab-btn" data-filter="special">Specjalne</button>
+      </div>
+      <div class="products__grid animate--stagger">
+        <article class="product-card" data-category="refuse">
+          <div class="product-card__image"><img src="assets/images/product-refuse.png" alt="Zabudowa śmieciarkowa" loading="lazy"></div>
+          <div class="product-card__body">
+            <span class="product-card__category">Zabudowy śmieciarkowe</span>
+            <h3 class="product-card__title">EcoPress RearLoad</h3>
+            <p class="product-card__description">Zabudowy z tylnym załadunkiem o pojemności 8–25 m³. Wysoki stopień zagęszczenia, cicha praca.</p>
+            <a href="#" class="product-card__link">Szczegóły <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          </div>
+        </article>
+        <article class="product-card" data-category="sweeper">
+          <div class="product-card__image"><img src="assets/images/product-sweeper.png" alt="Zamiatarka" loading="lazy"></div>
+          <div class="product-card__body">
+            <span class="product-card__category">Zamiatarki kompaktowe</span>
+            <h3 class="product-card__title">CleanSweep Compact</h3>
+            <p class="product-card__description">Kompaktowe zamiatarki miejskie z systemem recyrkulacji wody i filtracją PM2.5.</p>
+            <a href="#" class="product-card__link">Szczegóły <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          </div>
+        </article>
+        <article class="product-card" data-category="winter">
+          <div class="product-card__image"><img src="assets/images/product-winter.png" alt="Zabudowa zimowa" loading="lazy"></div>
+          <div class="product-card__body">
+            <span class="product-card__category">Zabudowy zimowe</span>
+            <h3 class="product-card__title">WinterGuard Pro</h3>
+            <p class="product-card__description">Pługi śnieżne, posypywarki i systemy zraszające do zimowego utrzymania dróg.</p>
+            <a href="#" class="product-card__link">Szczegóły <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          </div>
+        </article>
+        <article class="product-card" data-category="special">
+          <div class="product-card__image"><img src="assets/images/product-special.png" alt="Pojazd specjalny" loading="lazy"></div>
+          <div class="product-card__body">
+            <span class="product-card__category">Pojazdy specjalne</span>
+            <h3 class="product-card__title">HydroWash System</h3>
+            <p class="product-card__description">Myjki ciśnieniowe i pojazdy do czyszczenia infrastruktury miejskiej.</p>
+            <a href="#" class="product-card__link">Szczegóły <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          </div>
+        </article>
+        <article class="product-card" data-category="refuse">
+          <div class="product-card__image"><img src="assets/images/product-container.png" alt="System kontenerowy" loading="lazy"></div>
+          <div class="product-card__body">
+            <span class="product-card__category">Systemy kontenerowe</span>
+            <h3 class="product-card__title">HookLift Multi</h3>
+            <p class="product-card__description">Systemy hakowe i bramowe z wymiennymi kontenerami do 30 m³.</p>
+            <a href="#" class="product-card__link">Szczegóły <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="o-nas">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__content animate--left">
+          <div class="section__label">O firmie</div>
+          <h2 class="section__title">25 lat <span>innowacji</span> w branży komunalnej</h2>
+          <p class="about__text">Od 1999 roku tworzymy zabudowy komunalne najwyższej jakości. Łączymy polską tradycję inżynieryjną z najnowocześniejszymi technologiami produkcji, dostarczając rozwiązania spełniające europejskie normy jakości i bezpieczeństwa.</p>
+          <div class="about__values">
+            <div class="about__value">
+              <div class="about__value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+              <div><h4>Jakość</h4><p>Certyfikowane materiały i procesy</p></div>
+            </div>
+            <div class="about__value">
+              <div class="about__value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="10"/></svg></div>
+              <div><h4>Ekologia</h4><p>Rozwiązania przyjazne środowisku</p></div>
+            </div>
+            <div class="about__value">
+              <div class="about__value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg></div>
+              <div><h4>Innowacja</h4><p>Własne centrum R&D</p></div>
+            </div>
+            <div class="about__value">
+              <div class="about__value-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+              <div><h4>Partnerstwo</h4><p>Długoterminowe relacje z klientami</p></div>
+            </div>
+          </div>
+          <div class="about__certs">
+            <div class="about__cert"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> ISO 9001:2015</div>
+            <div class="about__cert"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> ISO 14001</div>
+            <div class="about__cert"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> CE</div>
+          </div>
+        </div>
+        <div class="timeline animate--right">
+          <div class="timeline__item"><div class="timeline__dot"></div><div class="timeline__year">1999</div><h4 class="timeline__title">Założenie firmy</h4><p class="timeline__text">Start produkcji prostych zabudów komunalnych w Poznaniu.</p></div>
+          <div class="timeline__item"><div class="timeline__dot"></div><div class="timeline__year">2005</div><h4 class="timeline__title">Pierwszy eksport</h4><p class="timeline__text">Wejście na rynki Czech, Słowacji i krajów bałtyckich.</p></div>
+          <div class="timeline__item"><div class="timeline__dot"></div><div class="timeline__year">2012</div><h4 class="timeline__title">Nowa fabryka</h4><p class="timeline__text">Otwarcie nowoczesnego zakładu produkcyjnego o pow. 12 000 m².</p></div>
+          <div class="timeline__item"><div class="timeline__dot"></div><div class="timeline__year">2020</div><h4 class="timeline__title">Centrum R&D</h4><p class="timeline__text">Uruchomienie centrum badawczo-rozwojowego i linii elektrycznych.</p></div>
+          <div class="timeline__item"><div class="timeline__dot"></div><div class="timeline__year">2025</div><h4 class="timeline__title">Lider rynku</h4><p class="timeline__text">2000+ zabudów, eksport do 15 krajów Europy.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNOLOGY -->
+  <section class="section technology" id="technologia">
+    <div class="container">
+      <div class="section__header animate">
+        <div class="section__label">Proces produkcji</div>
+        <h2 class="section__title">Zaawansowana <span>technologia</span></h2>
+        <p class="section__description">Od projektu 3D po gotowy pojazd – kontrolujemy każdy etap.</p>
+      </div>
+      <div class="technology__steps animate--stagger">
+        <div class="tech-step"><span class="tech-step__number">01</span>
+          <div class="tech-step__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+          <h4 class="tech-step__title">Projektowanie</h4><p class="tech-step__text">CAD/CAM 3D, symulacje MES</p>
+        </div>
+        <div class="tech-step"><span class="tech-step__number">02</span>
+          <div class="tech-step__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12h.01"/><path d="M17 12h.01"/><path d="M7 12h.01"/></svg></div>
+          <h4 class="tech-step__title">Prototypowanie</h4><p class="tech-step__text">Szybkie prototypy i testy</p>
+        </div>
+        <div class="tech-step"><span class="tech-step__number">03</span>
+          <div class="tech-step__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+          <h4 class="tech-step__title">Produkcja</h4><p class="tech-step__text">Spawanie robotyczne, CNC</p>
+        </div>
+        <div class="tech-step"><span class="tech-step__number">04</span>
+          <div class="tech-step__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg></div>
+          <h4 class="tech-step__title">Kontrola</h4><p class="tech-step__text">Testy jakości i odbiór</p>
+        </div>
+      </div>
+      <div class="technology__features animate--stagger">
+        <div class="feature-card">
+          <div class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m-7-1 4.2-5.8M19 5l-4.2 5.8M1 12h6m6 0h6M5 19l5.8-4.2M19 5l-5.8 4.2"/></svg></div>
+          <h4 class="feature-card__title">Spawanie robotyczne</h4>
+          <p class="feature-card__text">Precyzyjne spoiny wykonywane przez roboty KUKA z dokładnością 0.1mm.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h4 class="feature-card__title">Stal Hardox®</h4>
+          <p class="feature-card__text">Stosujemy stal odporną na ścieranie, gwarantującą trwałość zabudowy.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg></div>
+          <h4 class="feature-card__title">Napędy elektryczne</h4>
+          <p class="feature-card__text">E-kompaktory i e-zamiatarki dla zeroemisyjnej gospodarki komunalnej.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFERENCES -->
+  <section class="section references" id="realizacje">
+    <div class="container">
+      <div class="section__header animate">
+        <div class="section__label">Realizacje</div>
+        <h2 class="section__title">Zaufali nam <span>liderzy</span> branży</h2>
+        <p class="section__description">Nasze zabudowy pracują w ponad 200 miastach w całej Europie.</p>
+      </div>
+      <div class="references__testimonials animate--stagger">
+        <div class="testimonial-card">
+          <p class="testimonial-card__quote">Zabudowy EcoMunicipal wyróżniają się niezawodnością i niskimi kosztami eksploatacji. Po 3 latach intensywnej pracy nie mieliśmy żadnej poważnej awarii.</p>
+          <div class="testimonial-card__author"><div class="testimonial-card__avatar">MK</div><div><div class="testimonial-card__name">Marek Kowalski</div><div class="testimonial-card__role">Dyrektor techniczny, MPO Warszawa</div></div></div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-card__quote">Współpraca z EcoMunicipal to profesjonalizm na każdym etapie – od projektu po serwis posprzedażowy. Polecam każdemu operatorowi komunalnemu.</p>
+          <div class="testimonial-card__author"><div class="testimonial-card__avatar">AW</div><div><div class="testimonial-card__name">Anna Wiśniewska</div><div class="testimonial-card__role">Prezes, ZUK Kraków</div></div></div>
+        </div>
+      </div>
+      <div class="references__clients animate">
+        <p class="references__clients-title">Wybrani klienci</p>
+        <div class="logo-grid">
+          <div class="logo-grid__item"><span>MPO Warszawa</span></div>
+          <div class="logo-grid__item"><span>FCC Polska</span></div>
+          <div class="logo-grid__item"><span>Remondis</span></div>
+          <div class="logo-grid__item"><span>PreZero</span></div>
+          <div class="logo-grid__item"><span>Suez Polska</span></div>
+          <div class="logo-grid__item"><span>Veolia</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="kontakt">
+    <div class="container">
+      <div class="section__header animate">
+        <div class="section__label">Kontakt</div>
+        <h2 class="section__title">Porozmawiajmy o <span>Twoim projekcie</span></h2>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__form-wrapper animate--left">
+          <h3 class="contact__form-title">Wyślij zapytanie</h3>
+          <p class="contact__form-subtitle">Odpowiemy w ciągu 24 godzin roboczych.</p>
+          <form id="contact-form">
+            <div class="contact__form-row">
+              <div class="form-group"><label class="form-label" for="name">Imię i nazwisko *</label><input type="text" id="name" class="form-input" required placeholder="Jan Kowalski"><span class="form-error">Pole wymagane</span></div>
+              <div class="form-group"><label class="form-label" for="email">E-mail *</label><input type="email" id="email" class="form-input" required placeholder="jan@firma.pl"><span class="form-error">Podaj poprawny e-mail</span></div>
+            </div>
+            <div class="contact__form-row">
+              <div class="form-group"><label class="form-label" for="phone">Telefon</label><input type="tel" id="phone" class="form-input" placeholder="+48 123 456 789"></div>
+              <div class="form-group"><label class="form-label" for="subject">Temat *</label><select id="subject" class="form-select" required><option value="">Wybierz temat...</option><option>Zabudowy śmieciarkowe</option><option>Zamiatarki</option><option>Zabudowy zimowe</option><option>Pojazdy specjalne</option><option>Serwis / Części</option><option>Inne</option></select><span class="form-error">Wybierz temat</span></div>
+            </div>
+            <div class="form-group"><label class="form-label" for="message">Wiadomość *</label><textarea id="message" class="form-textarea" required placeholder="Opisz swoje potrzeby..."></textarea><span class="form-error">Pole wymagane</span></div>
+            <button type="submit" class="btn btn--primary btn--lg" style="width:100%">Wyślij zapytanie <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4z"/></svg></button>
+          </form>
+          <div class="form-success"><div class="form-success__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg></div><h3>Wiadomość wysłana!</h3><p>Dziękujemy za kontakt. Odpowiemy najszybciej jak to możliwe.</p></div>
+        </div>
+        <div class="contact__info animate--right">
+          <h3 class="contact__info-title">Dane kontaktowe</h3>
+          <p class="contact__info-text">Zapraszamy do kontaktu telefonicznego, mailowego lub osobistej wizyty w naszym zakładzie.</p>
+          <div class="contact__details">
+            <div class="contact__detail"><div class="contact__detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div><div><h4>Adres</h4><p>ul. Przemysłowa 42<br>61-541 Poznań, Polska</p></div></div>
+            <div class="contact__detail"><div class="contact__detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div><h4>Telefon</h4><p><a href="tel:+48616543210">+48 61 654 32 10</a></p></div></div>
+            <div class="contact__detail"><div class="contact__detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div><div><h4>E-mail</h4><p><a href="mailto:biuro@ecomunicipal.pl">biuro@ecomunicipal.pl</a></p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="header__logo"><div class="header__logo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div><span class="header__logo-text">Eco<span>Municipal</span></span></a>
+          <p>Producent innowacyjnych zabudów pojazdów komunalnych. Jakość, ekologia i niezawodność od 1999 roku.</p>
+        </div>
+        <div><h4 class="footer__heading">Produkty</h4><nav class="footer__links"><a href="#" class="footer__link">Śmieciarki</a><a href="#" class="footer__link">Zamiatarki</a><a href="#" class="footer__link">Zabudowy zimowe</a><a href="#" class="footer__link">Pojazdy specjalne</a></nav></div>
+        <div><h4 class="footer__heading">Firma</h4><nav class="footer__links"><a href="#" class="footer__link">O nas</a><a href="#" class="footer__link">Kariera</a><a href="#" class="footer__link">Certyfikaty</a><a href="#" class="footer__link">Aktualności</a></nav></div>
+        <div><h4 class="footer__heading">Wsparcie</h4><nav class="footer__links"><a href="#" class="footer__link">Serwis</a><a href="#" class="footer__link">Części zamienne</a><a href="#" class="footer__link">Dokumentacja</a><a href="#" class="footer__link">FAQ</a></nav></div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 EcoMunicipal. Wszelkie prawa zastrzeżone.</p>
+        <div class="footer__legal"><a href="#">Polityka prywatności</a><a href="#">Regulamin</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
