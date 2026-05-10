@@ -193,14 +193,7 @@
 }
 
 .hero__bg-glow {
-  position: absolute;
-  top: -20%;
-  right: -10%;
-  width: 60%;
-  height: 60%;
-  background: radial-gradient(circle, rgba(34,197,94,0.06) 0%, transparent 70%);
-  z-index: 1;
-  pointer-events: none;
+  display: none;
 }
 
 .hero__content {
@@ -222,10 +215,9 @@
 }
 
 .hero__title span {
-  background: var(--gradient-accent);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-text-white);
+  /* Optional subtle styling for the span */
+  opacity: 0.9;
 }
 
 .hero__subtitle {
@@ -254,7 +246,7 @@
 
 .hero__scroll-indicator {
   position: absolute;
-  bottom: var(--space-10);
+  bottom: var(--space-4);
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
@@ -269,6 +261,12 @@
   animation: bounce 2s infinite;
 }
 
+@media (max-width: 768px) {
+  .hero__scroll-indicator {
+    display: none;
+  }
+}
+
 .hero__scroll-indicator svg {
   width: 20px;
   height: 20px;
@@ -276,7 +274,7 @@
 
 @keyframes bounce {
   0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(8px); }
+  50% { transform: translateX(-50%) translateY(5px); }
 }
 
 /* ─── PRODUCTS SECTION ─── */
